@@ -28,3 +28,7 @@ Setup Laravel Project Guide
         -@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
         -@import "~@fortawesome/fontawesome-free/scss/solid.scss";
         -@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+    13. Install vue router to incorporate vue components
+        -npm install vue-router
+    14. Working on logout button
+        -check routes :  php artisan route:list
