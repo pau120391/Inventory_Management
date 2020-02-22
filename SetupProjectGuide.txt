@@ -1,0 +1,30 @@
+Setup Laravel Project Guide
+    1. Create Laravel Project using this command:(Assuming you install laravel globally)
+        -laravel new [projectname]
+    2. Install npm
+        -npm install
+    3. Go admin LTE for templates
+        -github repo: https://github.com/almasaeed2010/AdminLTE/release
+        -or you can run this command: npm install admin-lte@v3.0.0-alpha.2 --save
+        -then check your package.json if admin lte is installed
+    4. run command: php artisan serve
+    5. Go to env file to configure database connections
+    6. run command : php artisan make:auth
+        -it has error for laravel 5.8
+        -Do this steps
+            1. composer require laravel/ui --dev
+            2. php artisan ui vue --auth
+            3. php artisan migrate
+            4. npm install && npm run dev
+    7. Resources > Layouts - create master.blade.php
+    8. Modify Javascript src and css src on master.blade.php
+    9. import admin-lte to resourseces > js > app.js
+    10 import admin lte to resources > sass > app.scss
+    11.episode 2 - configure Fontawesome 5 with Admin LTE 3
+        - npm install @fortawesome/fontawesome-free
+        -check on package.json if installed
+    12.add fontawesome import on app.scss
+        - $fa-font-path:"../webfonts";
+        -@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+        -@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+        -@import "~@fortawesome/fontawesome-free/scss/brands.scss";
